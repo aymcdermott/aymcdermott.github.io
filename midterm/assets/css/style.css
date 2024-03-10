@@ -8,7 +8,7 @@
 /* nav bar*/
 #navbar {
 	height: 60px;
-    width: 100%;
+  width: 100%;
 	background: #ffffff;
   
 }
@@ -45,12 +45,13 @@ a {
 
     float: right;
     margin-right: 15px;
+    margin-top: -3.5px;
 }
 
 header {
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: white;
     position: sticky;
     top: 0;
@@ -215,7 +216,7 @@ header {
 /*buy our products*/
 .buy-our-products {
     position: absolute;
-    top: 26%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 
