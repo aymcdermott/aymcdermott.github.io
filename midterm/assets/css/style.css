@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.body {
+  font-family: 'Playfair_Display', serif;
+  font-size: 20px;
+}
+
+
 
 /*Home page*/
 /* nav bar*/
