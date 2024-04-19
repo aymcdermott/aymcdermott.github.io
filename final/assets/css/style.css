@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gothic_A1";
+}
+
+/* nav bar*/
+#navbar {
+	height: 60px;
+    width: 100%;
+	background: #ffffff;
+  
+}
+
+.navbar-item {
+    float: left;
+	margin-left: 60px;
+    margin-top: 10px;
+
+    font-size: 30px;
+    color: black;
+    letter-spacing: 7px;
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar-hearts {
+    height: 40px;
+    width: 97px;
+
+    float: right;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+header {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: white;
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+}
+
+
+
+/* image buttons*/
+#q1-container {
+    background-color: #ccc;
+    
+}
+
+#q1-spine {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.q1-btn {
+    width: auto;
+    height: auto;
+    margin-top: 30%;
+    margin-left: -55%;
+    padding: 5%;
+
+    transition: transform ease 0.2s;
+}
+
+.q1-btn:hover {
+    transform: scale(1.2);
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+
+    background-color: inherit;
+    color: black;
+    font-family: 'Gothic_A1';
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+button {
+    transition: transform 0.7s ease-in-out;
+  }
+
+#q1-btn-melon {
+    padding: 0%;
+    margin-left:0%;
+}
+
+#q1-btn-choco {
+    padding: 5% 5% 5% 5%;
+}
+
+#q1-btn-anpan {
+    padding: 0%;
+}
+
+
+
+/*Melon Pan Page*/
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+
+  }
+
+.melonpanpage {
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 14%;
+
+    z-index: 0;
+}
+
+.rightHalf {
+    float: right;
+    position: relative;
+
+    width: 500px;
+    height:593px;
+
+    z-index: 0;
+}
+
+#textmelon {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gothic_A1';
+    margin-left: 65%;
+    margin-top: -3%;
+
+    z-index: 0;
+}
+
+
+/*Melon pan fun fact*/
+.flex-container {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  
+  .flex-container-content {
+    position: relative;
+    background: black;
+    color: white;
+    margin: 1%;
+    font-family: 'Gothic_A1';
+    font-size: 25px;
+    padding: 1% 40%;
+    border-radius: 5px;
+  }
+  
+  .flex-container-content:hover {
+    background: black;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #funfact-1 {
+    display: none;
+    position: absolute;
+   
+    background: white;
+    color: black;
+    font-family: 'Gothic_A1';
+    font-size: 20px;
+    padding: 1% 5% 1% 5%;
+    text-align: left;
+    border-radius: 5px;
+    width: 500px;
+
+    line-height: 50px;
+
+    margin-left: -37%;
+
+  }
+
+  
+  #flex-1:hover #funfact-1 {
+    display: block;
+    width: 500px;
+    margin-top: 3%;
+    
+  }
+
+#bullet {
+    padding: 0px 45px;
+}
+
+
+.hearts-row {
+    margin-left: 29.5%;
+    margin-top: 3%
+}
+
+/*back button*/
+a {
+    display: inline-block;
+
+    margin-left: 30px;
+    margin-top: 3%;
+
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+a:hover {
+    background-color:#EED7D7;
+    color: black;
+    transition: 0.1s ease-in-out;
+
+  }
+  
+.back {
+    background-color: #f1f1f1;
+    color: black;
+    font-family: 'Gothic_A1';
+
+    font-size: 30px;
+    letter-spacing: 7px;
+    font-weight: bold;
+
+  }
+
+
+/*Breads Bounce*/
+@keyframes bounce {
+	0% {transform: translateY(0)}
+	100% {transform: translateY(-20px)}
+}
+
+.melonpanpage:hover{
+    animation: bounce .4s ease-in-out infinite alternate;
+}
+
+.chocopanpage:hover{
+    animation: bounce .4s ease-in-out infinite alternate;
+}
+
+.anpanpage:hover{
+    animation: bounce .4s ease-in-out infinite alternate;
+}
+
+
+/*Chocopan Pan Page*/
+.chocopanpage {
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 14%;
+
+    z-index: 0;
+}
+
+#textchoco {
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    font-family: 'Gothic_A1';
+    margin-left: 63.5%;
+    margin-top: -3%;
+
+    z-index: 0;
+}
+
+
+/*chocopan fun fact*/
+  
+  #funfact-2 {
+    background: white;
+    color: black;
+    font-family: 'Gothic_A1';
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    text-align: left;
+   
+    padding: 1% 5% 1% 5%;
+    border-radius: 5px;
+    width: 500px;
+
+    line-height: 50px;
+    margin-left: -37%;
+
+  }
+
+  
+  #flex-1:hover #funfact-2 {
+    display: block;
+    width: 500px;
+    margin-top: 3%;
+  }
+
+/*Anpanpan Page*/
+.anpanpage {
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 14%;
+
+    z-index: 0;
+}
+
+#textanpan {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gothic_A1';
+    
+    margin-left: 69%;
+    margin-top: -3%;
+
+    z-index: 0;
+}
+
+
+/*anpan fun fact*/
+  
+  #funfact-3 {
+    display: none;
+    position: absolute;
+   
+    background: white;
+    color: black;
+    font-family: 'Gothic_A1';
+    font-size: 20px;
+    padding: 1% 5% 1% 5%;
+    text-align: left;
+    border-radius: 5px;
+    width: 500px;
+
+    line-height: 50px;
+
+    margin-left: -37%;
+
+  }
+
+  
+  #flex-1:hover #funfact-3 {
+    display: block;
+    width: 500px;
+    margin-top: 3%;
+    
+  }
